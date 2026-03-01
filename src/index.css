@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 28% 6%;
+    --foreground: 210 25% 95%;
+    --card: 222 24% 11%;
+    --card-foreground: 210 25% 95%;
+    --popover: 222 24% 11%;
+    --popover-foreground: 210 25% 95%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 20% 16%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 15% 20%;
+    --input: 222 15% 20%;
+    --ring: 160 84% 39%;
+    --radius: 0.75rem;
+
+    --section-1: 160 84% 39%;
+    --section-2: 0 72% 51%;
+    --section-3: 200 80% 50%;
+    --section-4: 168 76% 42%;
+    --section-5: 38 92% 50%;
+
+    --sidebar-background: 222 28% 6%;
+    --sidebar-foreground: 210 25% 95%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 20% 16%;
+    --sidebar-accent-foreground: 210 25% 95%;
+    --sidebar-border: 222 15% 20%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .section-badge-1 {
+    background-color: hsl(var(--section-1) / 0.15);
+    color: hsl(var(--section-1));
+    border: 1px solid hsl(var(--section-1) / 0.3);
+  }
+  .section-badge-2 {
+    background-color: hsl(var(--section-2) / 0.15);
+    color: hsl(var(--section-2));
+    border: 1px solid hsl(var(--section-2) / 0.3);
+  }
+  .section-badge-3 {
+    background-color: hsl(var(--section-3) / 0.15);
+    color: hsl(var(--section-3));
+    border: 1px solid hsl(var(--section-3) / 0.3);
+  }
+  .section-badge-4 {
+    background-color: hsl(var(--section-4) / 0.15);
+    color: hsl(var(--section-4));
+    border: 1px solid hsl(var(--section-4) / 0.3);
+  }
+  .section-badge-5 {
+    background-color: hsl(var(--section-5) / 0.15);
+    color: hsl(var(--section-5));
+    border: 1px solid hsl(var(--section-5) / 0.3);
+  }
+
+  .dot-accent-1 { background-color: hsl(var(--section-1)); }
+  .dot-accent-2 { background-color: hsl(var(--section-2)); }
+  .dot-accent-3 { background-color: hsl(var(--section-3)); }
+  .dot-accent-4 { background-color: hsl(var(--section-4)); }
+  .dot-accent-5 { background-color: hsl(var(--section-5)); }
+}
